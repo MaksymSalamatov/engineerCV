@@ -1073,7 +1073,7 @@ strong {
 .footer {
   background-color: #1A1C26;
   color: #687086;
-  padding: 76px 20px 30px;
+  padding: 50px 20px 30px;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -1173,6 +1173,10 @@ strong {
           align-items: flex-start;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.footer .name {
+  margin-right: 10px;
 }
 
 .footer .about__row {
@@ -1544,10 +1548,14 @@ strong {
 }
 
 .banner {
-  padding: 60px 10px;
+  padding: 60px 10px 0 10px;
   background-color: #FF813A;
   color: #003458;
   position: relative;
+}
+
+.banner .person {
+  text-align: right;
 }
 
 .banner__content {
@@ -1559,11 +1567,15 @@ strong {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   padding: 15px;
   color: #003458;
+}
+
+.banner__picture-1 {
+  margin-right: 40px;
 }
 
 .banner__info {
@@ -1595,7 +1607,7 @@ strong {
 }
 
 .banner__info .information__info {
-  max-width: 740px;
+  max-width: 600px;
 }
 
 .banner__picture-2 {
@@ -2074,7 +2086,7 @@ strong {
 
 .skills__item {
   max-width: 400px;
-  margin-bottom: 20px;
+  margin: 0 10px 20px 0;
 }
 
 .skills__blocks {
@@ -2116,7 +2128,7 @@ strong {
 
 .education__univer {
   margin-right: 20px;
-  width: 400px;
+  max-width: 400px;
 }
 
 .education__name {
@@ -2199,22 +2211,6 @@ strong {
     margin-right: 0;
   }
 
-  .banner__info {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-
   .banner__info .information__info {
     margin-bottom: 30px;
   }
@@ -2274,15 +2270,11 @@ strong {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
 
   .footer__left {
@@ -2389,11 +2381,35 @@ strong {
     max-width: 30vw;
   }
 
+  .banner__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+
   .banner__picture-1 {
     display: none;
   }
 
   .banner__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 50px 0 50px 55px;
   }
 
@@ -2567,6 +2583,13 @@ strong {
   .forex__tab-active .forex__tab-content {
     height: 320px;
   }
+
+  .skills__blocks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 @media (max-width: 576px) {
@@ -2617,6 +2640,10 @@ strong {
             align-items: flex-start;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .footer__left {
@@ -2768,13 +2795,6 @@ strong {
 
   .forex__tab-active .forex__tab-content {
     height: 450px;
-  }
-
-  .skills__blocks {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
 
   .education__content {
